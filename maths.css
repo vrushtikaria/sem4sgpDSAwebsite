@@ -1,0 +1,27 @@
+body{
+    background-image: url('https://www.pearson.com/uk/content/dam/one-dot-com/one-dot-com/uk/images/subjects/mathematics/maths-theme-1.jpg.transform/big-size-xl/img.jpeg');
+    background-repeat: no-repeat;
+    background-size: 200% 100%;
+}
+.m1{
+    text-align: center;
+}
+.m1 a{
+    text-decoration: none;
+    color: #e4a430;
+}
+.list
+{
+    font-size: 35px;
+    color:#e4a430;
+    font-weight:900;
+}
+.topic{
+    font-size: 30px;
+    color: antiquewhite;
+}
+.topic p{
+    font-size: 25px;
+    padding: 10px 130px;
+
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stack.css">
+    <title>Stack</title>
+</head>
+<body>
+    <div class="stack">
+        <h1 style="text-align:center; font-size: 50px;">STACK</h1>
+        <ul class="list" id="ll">
+            <li>A stack is a linear data structure that follows the principle of Last In First Out (LIFO). This means the last element inserted inside the stack is removed first.</li>
+            <img src="https://cdn.programiz.com/sites/tutorial2program/files/stack-of-plates_0.png" alt="" height="90px" width="90px">   
+            <li>In this tutorial, you will learn different types of linked list. Also, you will find implementation of linked list in C.</li><br>
+            <li>Before you learn about the type of the linked list, make sure you know about the LinkedList Data Structure.</li><br>
+            <li>
+                There are three common types of Linked List. 
+                <ol class="stack1">
+                   <br> <li><a href="#">Put a new plate on top </a></li><br>
+                    <li><a href="#">Remove the top plate</a></li><br>
+                </ol>
+            </li>
+            <li>And, if you want the plate at the bottom, you must first remove all the plates on top. This is exactly how the stack data structure works.</li>
+        
+            <h3>LIFO Principle of Stack</h3>
+            <ul>
+                <li>In programming terms, putting an item on top of the stack is called push and removing an item is called pop.</li><br>
+                <img src="https://cdn.programiz.com/sites/tutorial2program/files/stack.png" alt="" height="180px" width="600px"><br>
+                <li>In the above image, although item 3 was kept last, it was removed first. This is exactly how the LIFO (Last In First Out) Principle works.</li><br>
+                <li>We can implement a stack in any programming language like C, C++, Java, Python or C#, but the specification is pretty much the same.</li><br>
+            </ul>
+            <h3>Basic Operations of Stack</h3>
+            <ul>
+                <li>There are some basic operations that allow us to perform different actions on a stack.</li><br>                   
+                    <ul>
+                        <li><span style="font-weight:bold;">Push:</span>Add an element to the top of a stack</li><br>
+                        <li><span style="font-weight:bold;">Pop:</span>Remove an element from the top of a stack</li><br>
+                        <li><span style="font-weight:bold;">IsEmpty:</span>Check if the stack is empty</li><br>
+                        <li><span style="font-weight:bold;">IsFull:</span>Check if the stack is full</li><br>
+                        <li><span style="font-weight:bold;">Peek:</span> Get the value of the top element without removing it</li>
+                        <br>
+                    </ul>   
+                </li>
+            </ul>
+            <h3>Working of Stack Data Structure</h3>
+            <ul>
+                <li>The operations work as follows:</li><br>                    
+                    <ol>
+                        <li>A pointer called TOP is used to keep track of the top element in the stack.</li><br>
+                        <li>When initializing the stack, we set its value to -1 so that we can check if the stack is empty by comparing TOP == -1.</li><br>
+                        <li>On pushing an element, we increase the value of TOP and place the new element in the position pointed to by TOP.</li><br>
+                        <li>On popping an element, we return the element pointed to by TOP and reduce its value.</li><br>
+                        <li>Before pushing, we check if the stack is already full</li><br>
+                        <li>Before popping, we check if the stack is already empty</li><br>
+                    </ol>   
+                </li>
+                <img src="https://cdn.programiz.com/sites/tutorial2program/files/stack-operations.png" alt="" height="180px" width="600px"><br>           
+             </ul>
+            <h3>Stack Time Complexity</h3>
+            <ul>
+                <li>For the array-based implementation of a stack, the push and pop operations take constant time, i.e. O(1).</li>
+            </ul>
+            <h3>Applications of Stack Data Structure</h3>
+            <ul>
+                <li>Although stack is a simple data structure to implement, it is very powerful. The most common uses of a stack are:</li>
+                <br>
+                <ul>
+                    <li><span style="font-weight:bold;">To reverse a word -</span>  all the lPutetters in a stack and pop them out. Because of the LIFO order of stack, you will get the letters in reverse order.</li><br>
+                    <li><span style="font-weight:bold;">In compilers -</span>Compilers use the stack to calculate the value of expressions like 2 + 4 / 5 * (7 - 9) by converting the expression to prefix or postfix form.</li><br>
+                    <li><span style="font-weight:bold;">In browsers - </span>Check if the stack is emptyThe back button in a browser saves all the URLs you have visited previously in a stack. Each time you visit a new page, it is added on top of the stack. When you press the back button, the current URL is removed from the stack, and the previous URL is accessed.</li><br>
+                </ul>
+            </ul>
+        </ul>
+    </div>
+    
+</body>
+</html>
+
+
+

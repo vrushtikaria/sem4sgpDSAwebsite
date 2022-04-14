@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(163,214,216);
+}
+.list{
+    font-size:25px;
+}
+.linear1 h1,h2,h3,h4,h5{
+    color: rgb(62,62,195);
+    /* font-weight: 900; */
+    font-size: 52px;
+    /* height: 100vh; */
+}
+.linear2{
+    color: rgb(62,62,195);
+}
+/* .linear1 a{
+    text-decoration: none;
+    color:#ad7037;
+} */
+#ll{
+    left: 10px;
+}

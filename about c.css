@@ -1,0 +1,32 @@
+body{
+  background-color: rgb(163, 214, 216);
+}
+.l1{
+    color:#ad7037;
+    font-weight: 900;
+    font-size: 30px;
+    text-align: center;
+}
+.l1 a{
+    text-decoration: none;
+    color:#ad7037;
+}
+.list{
+    list-style-type:circle;
+}
+.bgvideo{
+    position: absolute;
+    top: 0; left: 0;
+    z-index: -1;
+    /* height: 400%; */
+    /* width: 40%; */
+    object-fit: cover;
+    opacity: 2;
+}
+.c{
+    font-size:25px;
+}
+
+img{
+    opacity: 0.9;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="queue.css">
+    <title>Queue</title>
+</head>
+<body>
+    <div class="queue">
+        <h1 style="text-align:center; font-size: 50px;">QUEUE</h1>
+        <ul class="list">
+            <li>A queue is a useful data structure in programming. It is similar to the ticket queue outside a cinema hall, where the first person entering the queue is the first person who gets the ticket.</li><br>
+            <li>Queue follows the First In First Out (FIFO) rule - the item that goes in first is the item that comes out first.</li><br>
+            <img src="https://cdn.programiz.com/sites/tutorial2program/files/queue.png" alt="" height="90px" width="650px"><br>
+            <li>In the above image, since 1 was kept in the queue before 2, it is the first to be removed from the queue as well. It follows the FIFO rule.</li><br>
+            <li>In programming terms, putting items in the queue is called enqueue, and removing items from the queue is called dequeue.</li><br>
+            <li>We can implement the queue in any programming language like C, C++, Java, Python or C#, but the specification is pretty much the same.</li><br>
+            <h3>Basic Operations of Queue</h3>
+            <ul>
+                <li>A queue is an object (an abstract data structure - ADT) that allows the following operations:</li><br>
+                    <ul>
+                        <li><span style="font-weight:bold;">Enqueue:</span>Add an element to the end of the queue </li><br>
+                        <li><span style="font-weight:bold;">Dequeue: </span>Remove an element from the front of the queue</li><br>
+                        <li><span style="font-weight:bold;">IsEmpty:</span>Check if the queue is empty</li><br>
+                        <li><span style="font-weight:bold;">IsFull:</span>Check if the queue is full</li><br>
+                        <li><span style="font-weight:bold;">Peek:</span>Get the value of the front of the queue without removing it</li>
+                        <br>
+                    </ul>   
+                </li>
+            </ul>
+            <h3>Working of Queue</h3>
+            <ul>
+                <li>Queue operations work as follows:</li>
+                <ul>
+                    <li>two pointers FRONT and REAR</li>
+                    <li>FRONT track the first element of the queue</li>
+                    <li>REAR track the last element of the queue</li>
+                    <li>initially, set value of FRONT and REAR to -1</li>
+                </ul>
+            </ul>
+            <h3>Enqueue Operation</h3>
+            <ul>
+                <li>Enqueue Operation</li>
+                <li>for the first element, set the value of FRONT to 0</li>
+                <li>increase the REAR index by 1</li>
+                <li>add the new element in the position pointed to by REAR</li>
+            </ul>
+            <h3>Dequeue Operation</h3>
+            <ul>
+                <li>check if the queue is empty</li>
+                <li>return the value pointed by FRONT</li>
+                <li>increase the FRONT index by 1</li>
+                <li>for the last element, reset the values of FRONT and REAR to -1></li>
+            </ul>
+            <h3>Limitations of Queue</h3>
+            <ul>
+                <li>As you can see in the image below, after a bit of enqueuing and dequeuing, the size of the queue has been reduced.</li>
+                <img src="https://cdn.programiz.com/sites/tutorial2program/files/why-circular-queue_0.png" alt="" height="150px" width="450px"><br>
+                <li>And we can only add indexes 0 and 1 only when the queue is reset (when all the elements have been dequeued).</li><br>
+                <li>After REAR reaches the last index, if we can store extra elements in the empty spaces (0 and 1), we can make use of the empty spaces. This is implemented by a modified queue called the circular queue.</li><br>
+            </ul>
+            <h3>Complexity Analysis</h3>
+            <ul>
+                <li>The complexity of enqueue and dequeue operations in a queue using an array is O(1). If you use pop(N) in python code, then the complexity might be O(n) depending on the position of the item to be popped.</li><br>
+            </ul>
+            <h3>Applications of Queue</h3>
+            <ul>
+                <li>CPU scheduling, Disk Scheduling</li><br>
+                <li>When data is transferred asynchronously between two processes.The queue is used for synchronization. For example: IO Buffers, pipes, file IO, etc</li><br>
+                <li>Handling of interrupts in real-time systems.</li><br>
+                <li>Call Center phone systems use Queues to hold people calling them in order.</li><br>
+            </ul>
+        </ul>
+    </div>
+</body>
+</html>

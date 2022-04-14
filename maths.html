@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="maths.css">
+    <title>maths</title>
+</head>
+<body>
+    <div class="m1">
+        <h1 style="color: goldenrod;">MATHEMATICS For DSA</h1><br><br>
+        <div class="list">
+            <li> <a href="#topic1">Finding number of digits in a number</a></li><br>
+            <li> <a href="">Arithmetic and Geometric Progressions (AP, GP)</a></li><br>
+            <li> <a href="">Quadratic Equations</a></li><br>
+            <li> <a href="">Mean and Medium</a></li><br>
+            <li> <a href="">Prime Numbers</a> </li><br>
+            <li> <a href="">LCM and HCF</a></li><br>
+            <li> <a href="">Factorial</a></li><br>
+            <li> <a href="">Permutation and Combination</a></li><br>
+            <li> <a href="">Modular Arithmetic</a></li><br>
+        </div>
+        <br><br>
+    </div>
+    <div class="topic" id="topic1">
+        <h2>Finding number of digits in a number</h2>
+        <ol>
+            <li>Iterative Solution:</li>
+                <p>int digitcounter(long n) { <br>
+                    int count = 0;<br>
+                    while (n != 0) { <br>
+                     n = n / 10; <br>
+                     count++;<br>
+                    } <br>
+                    return count;<br> 
+                   }</p>
+            <li>Recursive Solution:</li>
+                   <p>
+                    int digitcounter(long n) {<br>
+                        if (n == 0) <br>
+                         return 0; <br>
+                        return 1 + digitcounter(n / 10); <br>
+                       } <br>
+                   </p>
+            <li> Logarithmic Solution:</li>
+                   <p>
+                    int digitcounter(long n) { <br>
+                        return floor ( log10 (n) + 1); <br>
+                       } <br>
+                   </p>
+        </ol>
+        <h2>Arithmetic and Geometric Progressions (AP, GP)</h2>
+        <ul>
+            <li>An arithmetic progression is a sequence of numbers such that the difference of any two successive members is a constant called the common difference.</li><br>
+            <ul>
+                <li>We denote by d the common difference.</li><br>
+                <li>By aₙ we denote the n-th term of an arithmetic progression.</li><br>
+                <p>aₙ = a₁ + (n-1)d</p><br>
+                <li>By Sₙ we denote the sum of the first n elements of an arithmetic series.</li><br>
+                <p>sₙ = n/2(2a₁ + (n-1)d)</p><br>
+            </ul>
+            <li>A geometric progression is a sequence of numbers such that the quotient of any two successive members of the sequence is a constant called the common ratio of the sequence.</li><br>
+            <ul>
+                <li>The geometric progression can be written as:</li>
+                <p>ar⁰=a, ar¹=ar, ar², ar³, …</p>
+                <li>where r ≠ 0, r is the common ratio and a is the first term. </li>
+                <li>Formula for the n-th term can be defined as: </li>
+                <p>aₙ = a⋅rⁿ⁻¹ </p>
+                <li>Formula for the sum of the first n numbers of a geometric series:</li>
+                <p>Sₙ = a (1-rⁿ)/(1-r)</p>
+            </ul>
+        </ul>
+        <h2>Quadratic Equations</h2>
+        <ul>
+            <p style="font-size: 40px;">ax² + bx + c = 0</p>
+            <li>Taking input from the user of the quadratic equation means taking a, b and c input from the user.</li><br>
+            <li>We can have maximum of two roots in a quadratic equation.The nature of roots depends upon discriminant (D):</li>    
+            <p>D = b²-4*a*c</p>
+            <li>If determinant is greater than 0, the roots are real and different.</li>
+            <li>If determinant is equal to 0, the roots are real and equal.</li>
+            <li>If determinant is less than 0, the roots are complex and different.</li><br>
+            <img src="https://miro.medium.com/max/1400/0*sRn_TTW_PoqO6kUk.jpeg" alt="" height="400px" width="600px">
+        </ul>
+            
+<div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/lmSpZ0bjCyQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen target="_blank" style="margin-left: 350px;margin-right: 450px;"></iframe>
+</div>
+
+    </div>
+    
+</body>
+</html>
